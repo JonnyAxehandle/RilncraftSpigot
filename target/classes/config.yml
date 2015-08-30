@@ -1,0 +1,83 @@
+---
+modules_enabled:
+    - combat
+
+mob_reward:
+    BLAZE:
+        min: 30
+        max: 35
+    CAVE_SPIDER:
+        min: 6
+        max: 9
+    CHICKEN:
+        min: 2
+        max: 2
+    COW:
+        min: 4
+        max: 4
+    CREEPER:
+        min: 10
+        max: 12
+    ENDER_DRAGON:
+        min: 10000
+        max: 10000
+    ENDERMAN:
+        min: 10
+        max: 15
+    ENDERMITE:
+        min: 5
+        max: 7
+    GHAST:
+        min: 45
+        max: 60
+    GIANT:
+        min: 125
+        max: 150
+    GUARDIAN:
+        min: 45
+        max: 60
+    HORSE:
+        min: 5
+        max: 6
+    MAGMA_CUBE:
+        min: 7
+        max: 9
+    MUSHROOM_COW:
+        min: 5
+        max: 5
+    PIG:
+        min: 3
+        max: 3
+    PIG_ZOMBIE:
+        min: 15
+        max: 20
+    RABBIT:
+        min: 2
+        max: 2
+    SHEEP:
+        min: 3
+        max: 3
+    SILVERFISH:
+        min: 6
+        max: 9
+    SKELETON:
+        min: 7
+        max: 10
+    SLIME:
+        min: 5
+        max: 7
+    SPIDER:
+        min: 7
+        max: 10
+    SQUID:
+        min: 3
+        max: 3
+    WITCH:
+        min: 25
+        max: 35
+    WITHER:
+        min: 1000
+        max: 1000
+    ZOMBIE:
+        min: 5
+        max: 7

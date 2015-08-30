@@ -1,0 +1,15 @@
+## YAML Template.
+name: Rilncraft
+main: com.twidgysoft.rilncraft.Rilncraft
+version: 0.1-SNAPSHOT
+load: startup
+commands:
+    riln:
+        description: Used to manage Riln balance
+        usage: /riln [bal|give] [player] [amount]
+    npc:
+        description: Manage NPCs
+        usage: /npc [create] [name]
+    key:
+        description: Create a key
+        usage: /key [name]

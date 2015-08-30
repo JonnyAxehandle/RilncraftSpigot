@@ -1,0 +1,159 @@
+## Combat module
+---
+module:
+    name: Combat
+    main: com.twidgysoft.rilncraft.combat.CombatModule
+
+skills:
+    # Skills used for attacking mobs
+    mobs:
+        aqua:
+            title: Sushi Making
+        bugs:
+            title: Bug Squashing
+        creepers:
+            title: Creeper Slaying
+        end:
+            title: Ender Ending
+        farm:
+            title: Butchery
+        hell:
+            title: Demon Hunting
+        player:
+            title: PVP
+        slime:
+            title: Slime Slaying
+        undead:
+            title: Undead Slaying
+        witches:
+            title: Witch Hunting
+    # Skills used for melee weapons
+    weapons:
+        swords:
+            title: Swordsmanship
+        axes:
+            title: Skullcutting
+        fist:
+            title: Unarmed Combat
+        improv:
+            title: Improvized Weaponry
+    potions:
+        # Instant health
+        healing:
+            title: Medicinal Alchemy
+        # Harming
+        harming:
+            title: Combat Alchemy
+        # Positive effects over time
+        buffing:
+            title: Buffing Alchemy
+        # Negative effects over time
+        debuffing:
+            title: Debuffing Alchemy
+    archery:
+        general:
+            title: Archery
+
+# Matches mobs to skills
+mobs:
+    BLAZE:
+        skillID: hell
+    CAVE_SPIDER:
+        skillID: bugs
+    CHICKEN:
+        skillID: farm
+    COW:
+        skillID: farm
+    CREEPER:
+        skillID: creepers
+    ENDER_DRAGON:
+        skillID: end
+    ENDERMAN:
+        skillID: end
+    ENDERMITE:
+        skillID: end
+    GHAST:
+        skillID: hell
+    GIANT:
+        skillID: undead
+    GUARDIAN:
+        skillID: aqua
+    HORSE:
+        skillID: farm
+    MAGMA_CUBE:
+        skillID: hell
+    MUSHROOM_COW:
+        skillID: farm
+    PIG:
+        skillID: farm
+    PIG_ZOMBIE:
+        skillID: undead
+    PLAYER:
+        skillID: player
+    RABBIT:
+        skillID: farm
+    SHEEP:
+        skillID: farm
+    SILVERFISH:
+        skillID: bugs
+    SKELETON:
+        skillID: undead
+    SLIME:
+        skillID: slime
+    SPIDER:
+        skillID: bugs
+    SQUID:
+        skillID: aqua
+    WITCH:
+        skillID: witches
+    WITHER:
+        skillID: undead
+    ZOMBIE:
+        skillID: undead
+    
+    # CREEPER:
+    #     type: creeper
+    #     reward:
+    #         min: 10
+    #         max: 12
+
+# Matches weapons to skills
+# Anything not on this list is improv
+weapons:
+    WOOD_SWORD: swords
+    IRON_SWORD: swords
+    STONE_SWORD: swords
+    GOLD_SWORD: swords
+    DIAMOND_SWORD: swords
+    WOOD_AXE: axes
+    IRON_AXE: axes
+    STONE_AXE: axes
+    GOLD_AXE: axes
+    DIAMOND_AXE: axes
+    AIR: fist
+
+# Maps potion effects to skills
+potions:
+    SPEED: buffing
+    SLOW: debuffing
+    FAST_DIGGING: buffing
+    SLOW_DIGGING: debuffing
+    INCREASE_DAMAGE: buffing
+    HEAL: healing
+    HARM: harming
+    JUMP: buffing
+    CONFUSION: debuffing
+    REGENERATION: buffing
+    DAMAGE_RESISTANCE: buffing
+    FIRE_RESISTANCE: buffing
+    WATER_BREATHING: buffing
+    INVISIBILITY: buffing
+    BLINDNESS: debuffing
+    NIGHT_VISION: buffing
+    HUNGER: debuffing
+    WEAKNESS: debuffing
+    POISON: debuffing
+    WITHER: debuffing
+    HEALTH_BOOST: buffing
+    ABSORPTION: buffing
+    SATURATION: buffing

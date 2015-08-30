@@ -1,0 +1,339 @@
+## YAML Template.
+---
+module:
+    name: Crafting
+    main: com.twidgysoft.rilncraft.crafting.CraftingModule
+    
+skills:
+    # Skills for using certain materials
+    # Perk = use less materials per item
+    materials:
+        wood:
+            title: Woodworking
+        stone:
+            title: Masonry
+        iron:
+            title: Blacksmithing
+        gold:
+            title: Goldsmithing
+        gem:
+            title: Jewellery
+        fire:
+            title: Pyrotechnics
+        glass:
+            title: Glassworking
+        leather:
+            title: Leathercrafting
+        redstone:
+            title: Engineering
+    # Skills for creating certain items
+    # Perks vary
+    craft:
+        food:
+            title: Cooking
+        tools:
+            title: Toolsmithing
+        swords:
+            title: Swordsmithing
+        bows:
+            title: Fletching
+        armor:
+            title: Tailoring
+
+# List of items and their relevant skills
+items:
+    BAKED_POTATO:
+        itemskill: food
+        itemxp: 3
+    BOW:
+        itemskill: bows
+        itemxp: 5
+    BREAD:
+        itemskill: food
+        itemxp: 5
+    CAKE:
+        itemskill: food
+        itemxp: 25
+    CHAINMAIL_BOOTS:
+        itemskill: armor
+        itemxp: 20
+    CHAINMAIL_CHESTPLATE:
+        itemskill: armor
+        itemxp: 40
+    CHAINMAIL_HELMET:
+        itemskill: armor
+        itemxp: 25
+    CHAINMAIL_LEGGINGS:
+        itemskill: armor
+        itemxp: 35
+    CLAY_BRICK:
+        materialskill: stone
+        materialxp: 4
+    COBBLESTONE:
+        materialskill: stone
+        materialxp: 2
+    COOKED_BEEF:
+        itemskill: food
+        itemxp: 5
+    COOKED_CHICKEN:
+        itemskill: food
+        itemxp: 5
+    COOKED_FISH:
+        itemskill: food
+        itemxp: 5
+    COOKED_MUTTON:
+        itemskill: food
+        itemxp: 5 
+    COOKED_RABBIT:
+        itemskill: food
+        itemxp: 5 
+    COOKIE:
+        itemskill: food
+        itemxp: 2
+    DIAMOND:
+        materialskill: gem
+        materialxp: 7
+    DIAMOND_AXE:
+        itemskill: tools
+        itemxp: 20
+    DIAMOND_BOOTS:
+        itemskill: armor
+        itemxp: 40
+    DIAMOND_CHESTPLATE:
+        itemskill: armor
+        itemxp: 80
+    DIAMOND_HELMET:
+        itemskill: armor
+        itemxp: 50
+    DIAMOND_HOE:
+        itemskill: tools
+        itemxp: 15
+    DIAMOND_LEGGINGS:
+        itemskill: armor
+        itemxp: 40
+    DIAMOND_PICKAXE:
+        itemskill: tools
+        itemxp: 20
+    DIAMOND_SPADE:
+        itemskill: tools
+        itemxp: 5
+    DIAMOND_SWORD:
+        itemskill: swords
+        itemxp: 15
+    EMERALD:
+        materialskill: gem
+        materialxp: 10
+    EMPTY_MAP:
+        itemskill: tools
+        itemxp: 7
+    ENDER_PEARL:
+        materialskill: gem
+        materialxp: 5
+    FIREWORK_CHARGE:
+        materialskill: fire
+        materialxp: 7
+    FISHING_ROD:
+        itemskill: tools
+        itemxp: 4
+    FLINT:
+        materialskill: stone
+        materialxp: 4
+    FLINT_AND_STEEL:
+        itemskill: tools
+        itemxp: 3
+    GLASS:
+        materialskill: glass
+        materialxp: 4
+    GLOWSTONE:
+        materialskill: glass
+        materialxp: 5
+    GLOWSTONE_DUST:
+        materialskill: glass
+        materialxp: 2
+    GOLD_AXE:
+        itemskill: tools
+        itemxp: 24
+    GOLD_BOOTS:
+        itemskill: armor
+        itemxp: 32
+    GOLD_CHESTPLATE:
+        itemskill: armor
+        itemxp: 64
+    GOLD_HELMET:
+        itemskill: armor
+        itemxp: 40
+    GOLD_HOE:
+        itemskill: tools
+        itemxp: 16
+    GOLD_INGOT:
+        materialskill: gold
+        materialxp: 7
+    GOLD_LEGGINGS:
+        itemskill: armor
+        itemxp: 56
+    GOLD_PICKAXE:
+        itemskill: tools
+        itemxp: 24
+    GOLD_SPADE:
+        itemskill: armor
+        itemxp: 8
+    GOLD_SWORD:
+        itemskill: swords
+        itemxp: 16
+    GRILLED_PORK:
+        itemskill: food
+        itemxp: 5
+    HARD_CLAY:
+        materialskill: stone
+        materialxp: 5
+    IRON_AXE:
+        itemskill: tools
+        itemxp: 15
+    IRON_BOOTS:
+        itemskill: armor
+        itemxp: 20
+    IRON_CHESTPLATE:
+        itemskill: armor
+        itemxp: 40
+    IRON_HELMET:
+        itemskill: armor
+        itemxp: 25
+    IRON_HOE:
+        itemskill: tools
+        itemxp: 10
+    IRON_INGOT:
+        materialskill: iron
+        materialxp: 4
+    IRON_LEGGINGS:
+        itemskill: armor
+        itemxp: 35
+    IRON_PICKAXE:
+        itemskill: tools
+        itemxp: 15
+    IRON_SPADE:
+        itemskill: tools
+        itemxp: 5
+    IRON_SWORD:
+        itemskill: swords
+        itemxp: 10
+    LEATHER:
+        materialskill: leather
+        materialxp: 5
+    LEATHER_BOOTS:
+        itemskill: armor
+        itemxp: 16
+    LEATHER_CHESTPLATE:
+        itemskill: armor
+        itemxp: 32
+    LEATHER_HELMET:
+        itemskill: armor
+        itemxp: 20
+    LEATHER_LEGGINGS:
+        itemskill: armor
+        itemxp: 24
+    LOG:
+        materialskill: wood
+        materialxp: 4
+    LOG_2:
+        materialskill: wood
+        materialxp: 4
+    MOSSY_COBBLESTONE:
+        materialskill: wood
+        materialxp: 4
+    MUSHROOM_SOUP:
+        itemskill: food
+        itemxp: 15
+    NETHER_BRICK:
+        materialskill: stone
+        materialxp: 7
+    OBSIDIAN:
+        materialskill: stone
+        materialxp: 9
+    PRISMARINE_CRYSTALS:
+        materialskill: gem
+        materialxp: 7
+    PRISMARINE_SHARD:
+        materialskill: stone
+        materialxp: 7
+    PUMPKIN_PIE:
+        itemskill: food
+        itemxp: 10
+    QUARTZ:
+        materialskill: gem
+        materialxp: 4
+    QUARTZ_BLOCK:
+        materialskill: gem
+        materialxp: 7
+    RABBIT_HIDE:
+        materialskill: leather
+        materialxp: 2
+    RABBIT_STEW:
+        itemskill: food
+        itemxp: 17
+    RED_SANDSTONE:
+        materialskill: stone
+        materialxp: 4
+    REDSTONE:
+        materialskill: redstone
+        materialxp: 3
+    SANDSTONE:
+        materialskill: stone
+        materialxp: 4
+    SHEARS:
+        itemskill: tools
+        itemxp: 10
+    SPECKLED_MELON:
+        itemskill: food
+        itemxp: 15
+    STICK:
+        materialskill: wood
+        materialxp: 1
+    STONE:
+        materialskill: stone
+        materialxp: 5
+    STONE_AXE:
+        itemskill: tools
+        itemxp: 6
+    STONE_HOE:
+        itemskill: tools
+        itemxp: 4
+    STONE_PICKAXE:
+        itemskill: tools
+        itemxp: 6
+    STONE_SPADE:
+        itemskill: tools
+        itemxp: 2
+    STONE_SWORD:
+        itemskill: swords
+        itemxp: 4
+    SULPHUR:
+        materialskill: fire
+        materialxp: 5
+    WOOD:
+        materialskill: wood
+        materialxp: 3
+    WOOD_AXE:
+        itemskill: tools
+        itemxp: 3
+    WOOD_HOE:
+        itemskill: tools
+        itemxp: 2
+    WOOD_PICKAXE:
+        itemskill: tools
+        itemxp: 3
+    WOOD_SPADE:
+        itemskill: tools
+        itemxp: 1
+    WOOD_SWORD:
+        itemskill: swords
+        itemxp: 2
+
+# A list of items that, when used or crafted, do not count
+# Used mostly for items that are easily reverse-crafted
+blacklist:
+    - DIAMOND_BLOCK
+    - IRON_BLOCK
+    - GOLD_BLOCK
+    - GOLD_NUGGET
+    - HAY_BLOCK
+    - REDSTONE_BLOCK

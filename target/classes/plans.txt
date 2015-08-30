@@ -1,0 +1,56 @@
+[ GLOBAL MODULE ]
+
+Commands:
+
+    /riln [bal|give|set] [player] [amount]
+    - Show Riln balance
+    - Give Riln
+    - Set Riln (admin only)
+
+    /rilncraft [help] [page]
+    - Show plugin info/help files
+
+    /rcadmin [?]
+    - Some form of admin controls
+
+Events:
+    Player Death: Lose 35% Riln
+
+[ COMBAT MODULE ]
+
+Commands:
+
+    /cskills [category] [sub category]
+    - Show combat skills
+
+Events:
+    Mob Hit: Gain XP to mob skill
+    Mob Hit with Melee: Gain XP to melee skill
+    Mob Hit with Arrow: Gain XP to archery
+    Mob Hit with Splash Potion: Gain XP in potion skill
+    Mob Killed: Gain Riln
+
+Mob Skills:
+    - Each sub-category gives bonus damage every 3 levels
+    - Each sub-category has perks given at different levels
+
+    Butchery:
+    - Farm animals
+    - Sheer Finesse Perk: Increased chance to get more wool from shearing every 4 levels
+    - Fine Cuts Perk: Increased chance to drop extra meat every 5 levels
+
+    Undead Slaying:
+    - Zombies, Skeletons, Wither Boss, and Zombie Pigmen
+    - Grave Robber Perk: Increased chance of rare drops every 5 levels
+        - Can also decrease rotten flesh drops
+
+    Creeper Slaying:
+    - Creepers
+    - Misfire Perk: Increased chance of a creeper failing to explode every 5 levels
+
+    Bug Squashing:
+    - Spiders, Cave Spiders, Silverfish, and Endermites
+    - Bug Repellent Perk: Increased chance for silverfish/endermites to not spawn every 4 levels
+    - High Fortitude Perk: Reduced damage/effect time from poison every 5 levels
+    
+    
