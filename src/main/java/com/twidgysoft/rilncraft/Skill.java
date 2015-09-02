@@ -44,4 +44,9 @@ public class Skill {
         this.level++;
     }
     
+    public SkillRank getRank()
+    {
+        return SkillRank.forLevel( level );
+    }
+    
 }

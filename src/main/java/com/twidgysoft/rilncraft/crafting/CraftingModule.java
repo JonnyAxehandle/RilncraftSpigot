@@ -35,12 +35,15 @@ public class CraftingModule extends Module {
         skills.loadFromConfig(definition.getConfigurationSection("skills"));
         
         blacklist = definition.getStringList("blacklist");
+        
+        rilncraft.getCommand("crafting").setExecutor(new CraftingCommandExecutor(this));
     }
 
     @Override
     public void onEnable() {
         PluginManager pluginManager = rilncraft.getServer().getPluginManager();
-        pluginManager.registerEvents(new CraftListener(this), rilncraft);
+        pluginManager.registerEvents(new SingleCraftListener(this), rilncraft);
+        pluginManager.registerEvents(new MultiCraftListener(this), rilncraft);
         
         items.clear();
         ConfigurationSection itemDef = definition.getConfigurationSection("items");

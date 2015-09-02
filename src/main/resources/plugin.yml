@@ -13,3 +13,9 @@ commands:
     key:
         description: Create a key
         usage: /key [name]
+    combat:
+        description: Show combat skills
+        usage: /combat [mobs|weapons|archery|potions]
+    crafting:
+        description: Show crafting skills
+        usage: /crafting [craft|materials]

@@ -35,14 +35,29 @@ class GainSkillListener implements Listener {
         int nextLevelXP = definition.getXPForLevel( currentLevel + 1 );
         
         skill.addXP(amount);
-        if( skill.getXp() > nextLevelXP )
+        if( skill.getXp() >= nextLevelXP )
         {
-            skill.addLevel();
+            fixSkillLevel( skill , definition );
             int newLevel = skill.getLevel();
             String message = String.format("§a%s§r is now level §e%d§r!",title,newLevel);
             player.sendMessage( message );
         }
         
+    }
+
+    private void fixSkillLevel(Skill skill, SkillDefinition definition) {
+        
+        int level = skill.getLevel();
+        int nextLevelXP = definition.getXPForLevel( level + 1 );
+        int xp = skill.getXp();
+        
+        if( xp < nextLevelXP )
+        {
+            return;
+        }
+        
+        skill.addLevel();
+        fixSkillLevel( skill , definition );
     }
     
 }

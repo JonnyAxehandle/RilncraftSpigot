@@ -149,9 +149,16 @@ class DeathListener implements Listener {
         ItemStack itemInHand = killer.getItemInHand();
         String weaponType = module.weaponTypes.get( itemInHand.getType().toString() );
         
-        
-        
         if( !"axes".equals(weaponType) )
+        {
+            return;
+        }
+        
+        int axeLevel = module.getRilncraft().getRilncrafter(killer).getSkill("combat.weapons.axes").getLevel();
+        int beheadChance = ( axeLevel / 4 ) * 3;
+        int roll = getRandom(0,100);
+        
+        if( roll > beheadChance )
         {
             return;
         }

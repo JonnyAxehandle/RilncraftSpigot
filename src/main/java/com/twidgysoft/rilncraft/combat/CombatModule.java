@@ -42,6 +42,8 @@ public class CombatModule extends Module {
         pluginManager.registerEvents(new PotionListener(this), rilncraft);
         pluginManager.registerEvents(new DeathListener(this), rilncraft);
         pluginManager.registerEvents(new ArcheryListener(this), rilncraft);
+        
+        rilncraft.getCommand("combat").setExecutor(new CombatCommandExecutor(this));
     }
     
     @Override
